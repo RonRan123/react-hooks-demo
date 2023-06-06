@@ -22,13 +22,14 @@ function DelayedCounter(){
     const decrement = () => {
         setTimeout(function delay(){
             // setCount(count - 1) // causes issues
-            setCount(prevCount => prevCount - 1)
+            setCount(strawberry => strawberry - 1)
         }, 3000);
     } 
     const increment = () => {
         setTimeout(function delay(){
             // setCount(count + 1) // causes issues
             setCount(prevCount => prevCount + 1)
+            // setCount(100)
         }, 3000);
     } 
     return (
@@ -46,7 +47,10 @@ function DelayedCounter(){
 function Counter({name='CounterName', initial=0}){
     const [count, setCount] = useState(parseInt(initial));
     const decrement = () => setCount(count-1) //one way
-    const increment = () => setCount(prevCount => prevCount + 1) //better way
+    const increment = () => {
+        setCount(count + 1) //better way
+        setCount(count + 1)
+    }
     return (
         <>
             <button onClick={decrement}>-</button>

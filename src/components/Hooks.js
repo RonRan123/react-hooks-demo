@@ -9,6 +9,7 @@ function Hooks() {
             <Link to='/usestate'> useState</Link> |{" "} 
             <Link to='/useeffect'> useEffect</Link> |{" "} 
             <Link to='/usecontext'> useContext</Link> |{" "} 
+            <Link to='/usereducer'> useReducer</Link> |{" "} 
        </nav>
        <Outlet />
     </>

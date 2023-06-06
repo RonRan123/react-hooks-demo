@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import UseStateDemo from './components/UseStateDemo';
 import UseEffectDemo from './components/UseEffectDemo';
 import UseContextDemo from './components/UseContextDemo';
+import UseReducerDemo from './components/UseReducerDemo';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
               <Route path='usestate' element={<UseStateDemo />} />
               <Route path='useeffect' element={<UseEffectDemo />} />
               <Route path='usecontext' element={<UseContextDemo />} />
+              <Route path='usereducer' element={<UseReducerDemo />} />
             </Route>
         </Routes>
        </BrowserRouter>
